@@ -1,5 +1,5 @@
 # Data_Analysis_Python
-These are data analysis projects done using python.
+These are data analysis projects done using **python**, and **sql**.
 Various libraries are used inculuding:
    1. pandas
    2. numpy
