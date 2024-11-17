@@ -2,11 +2,11 @@ Here's a README file draft that outlines the steps you've taken in your project,
 
 ---
 
-# Eskom Power Generation and Demand Analysis Project
+# Eskom Data Prep(EDA)
 
 ## Project Overview
 
-This project aims to analyze and visualize trends in Eskom's power generation and demand, focusing on the periods during and after COVID-19. The dataset includes key metrics like forecasted demand, generation capacity, renewable energy contributions, and international energy exchanges. The data has been segmented and loaded into a MySQL database for analysis and visualization in Tableau.
+This project focused on preparing the Eskom dataset(cleaning the data) to allow us to conduct visualisations using BI Tools such as Power BI or Tableau and machine learning experiments( predictive). The dataset includes key metrics like forecasted demand, generation capacity, renewable energy contributions, and international energy exchanges. The data was segmented and loaded into a MySQL database for analysis and visualisation in Tableau.
 
 ## Table of Contents
 1. [Data Collection](#data-collection)
@@ -14,9 +14,8 @@ This project aims to analyze and visualize trends in Eskom's power generation an
 3. [Database Setup](#database-setup)
 4. [Segmentation](#segmentation)
 5. [Loading Data into SQL](#loading-data-into-sql)
-6. [Visualization in Tableau](#visualization-in-tableau)
-7. [Usage](#usage)
-8. [Future Work](#future-work)
+6. [Usage](#usage)
+7. [Future Work](#future-work)
 
 ## 1. Data Collection
 The dataset used in this analysis includes Eskom's hourly records over five years, containing columns for various generation and demand metrics. Key metrics include:
@@ -89,29 +88,14 @@ These segments allow for trend comparisons between periods, facilitating insight
 ## 5. Loading Data into SQL
 Data for each segment was loaded into the respective tables in the MySQL database using the `CREATE TABLE` statements and `INSERT` commands in SQL.
 
-## 6. Visualization in Tableau
-Tableau is used to visualize the trends, with SQL integrated for querying the MySQL database. The following visualizations are planned:
-- **Trend Analysis**: Time series plots of generation and demand metrics, segmented by period.
-- **Energy Source Breakdown**: Visualization of contributions by different energy sources (thermal, nuclear, hydro, renewables, etc.) during and after COVID-19.
-- **Capacity Utilization**: Comparative plots for renewable energy capacity utilization before and after COVID-19.
-
-## 7. Usage
+## 6. Usage
 ### Prerequisites
 - MySQL Database
-- Tableau Desktop (or equivalent Tableau visualization tool)
 - SQL environment (MySQL Workbench recommended)
 
-### Instructions
-1. **Set up the MySQL Database**:
-   - Create a database and run the provided `CREATE TABLE` commands to set up the tables.
-   - Import the cleaned and segmented datasets into their respective tables.
-2. **Connect Tableau to MySQL**:
-   - Use Tableau's native MySQL connector to connect to the database.
-   - Use SQL queries to pull the data from `during_covid` and `post_covid` tables into Tableau for visualization.
-3. **Create Visualizations**:
-   - Follow the planned visualizations or customize as needed to explore the data.
-
-## Future Steps
+## 7. Future Steps
 - **Tableau Visualization**: Develop visualizations to show the trends in power generation and demand during and after COVID-19.
 - **Machine Learning Model Development**: Use cleaned data to train models for forecasting residual demand, aiding in decision-making for energy resource planning.
+
+
 
