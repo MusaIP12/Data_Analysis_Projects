@@ -1,7 +1,3 @@
-Here's a README file draft that outlines the steps you've taken in your project, along with instructions for anyone looking to understand or replicate your work.
-
----
-
 # Eskom Data Prep(EDA)
 
 ## Project Overview
